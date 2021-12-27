@@ -1,0 +1,183 @@
+@import 'master.css';
+
+/* main */
+main {
+    width: auto;
+    margin: 120px 5vw 50px 5vw;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: top;
+}
+
+#noResult {
+    margin: 70px;
+    padding: 30px;
+
+    font-size: 2.5rem;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+
+    animation-name: change-color;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    /* specific from-to option */
+    animation-direction: alternate;
+}
+
+#filter {
+    width: 50%;
+    min-width: 800px;
+    padding: 20px;
+
+    align-self: center;
+
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+#filter a {
+    width: 100px;
+    height: 50px;
+    padding-right: 15px;
+
+    border: none;
+    border-radius: 10px;
+
+    color: black;
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    text-decoration: none;
+    line-height: 50px;
+
+    background-color: #d3d3d3;
+
+    transition: 0.5s;
+}
+
+#filter a:hover {
+    transform: scale(1.1);
+
+    color: white;
+
+    background-color: rgb(146, 146, 146);
+
+    cursor: pointer;
+
+    transition: 0.5s;
+}
+
+.listingBar {
+    width: 80%;
+    height: 30vh;
+    min-height: 220px;
+    margin: 20px;
+
+    align-self: center;
+
+    color: black;
+    font-size: 1.25rem;
+    text-decoration: none;
+
+    border-radius: 15px;
+
+    background-color: rgba(0, 255, 255, 0.3);
+
+    transition: 0.5s;
+}
+
+.listingBar:hover {
+    box-shadow: 3px 3px 2px grey;
+
+    background-color: rgba(0, 255, 255, 0.45);
+
+    cursor: pointer;
+
+    transition: 0.5s;
+}
+
+
+.photoCol, .detailsCol, .priceCol {
+    height: 24vh;
+    min-height: 170px;
+    margin: 10px 0 10px 0;
+}
+
+.photoCol {
+    width: 25%;
+
+    border-radius: 10px;
+}
+
+.detailsCol {
+    width: 40%;
+}
+
+.priceCol {
+    width: 15%;
+
+    text-align: center;
+}
+
+.priceCol > div {
+    padding: 5px;
+
+    font-size: 1.4rem;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.title {
+    overflow-y: hidden;
+
+    font-size: 1.5vw;
+    font-weight: bold;
+}
+
+.location {
+    overflow-y: hidden;
+
+    color: grey;
+    font-size: 1.1rem;
+}
+
+.starsAndGuest {
+    width: 100%;
+    overflow-y: hidden;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.stars {
+    width: 300px;
+
+    color: #555555;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+}
+
+.stars span {
+    color: yellow;
+    font-size: 1.7rem;
+
+    text-shadow: 0.4px 0.4px 0.3px black, -.04px -0.4px 0.3px black;
+}
+
+.guest span {
+    font-size: 1.1rem;
+    line-height: 2rem;
+}
+
+.tags {
+    overflow-y: hidden;
+    
+    font-size: 1.2rem;
+}
+
+

@@ -1,0 +1,113 @@
+
+/* Manage Property */
+.parentbox {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    flex-wrap: wrap;
+  }
+  
+.childbox {
+/*
+flex: flex-grow flex-shrink flex-basis;
+flex-grow 	A number specifying how much the item will grow relative to the rest of the flexible items
+flex-shrink 	A number specifying how much the item will shrink relative to the rest of the flexible items
+flex-basis 	The length of the item. Legal values: "auto", "inherit", or a number followed by "%", "px", "em" or any other length unit
+*/
+flex: 0 0 350px;
+margin: 30px;
+height: 200px;
+background-color: #d9f9ff;
+border-radius: 10px;
+border: #d4d4d4 solid 2px;
+padding: 10px;
+}
+  
+.addProperty {
+    margin: 20px 0 0 0;
+    float:right;   
+    width: 100px;
+    height: 30px;
+}
+
+.propertyIMGlabel  {
+    max-width: 70vw;
+    height:510px;
+    position: relative;
+    margin: auto;
+    margin-top: 20px;
+}
+
+#propertyImg {
+    width: 200px;
+    height:150px;
+    margin-right: 5px;
+}
+
+/* All Inputs */
+input[type=text],input[type=tel], input[type=date], input[type=number], textarea, select {
+    width: 30%;
+    padding: 5px;
+    margin: 0px 0 22px 0;
+    display: inline-block;
+    font-size:10pt;
+}
+input[type='radio'] { 
+    transform: scale(1); 
+    }
+
+.stars {
+    font-size: 2rem;
+}
+
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+  }
+
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+  /* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .prev {
+      left:0;
+  }

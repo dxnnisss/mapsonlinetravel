@@ -1,0 +1,35 @@
+@import 'master.css';
+
+/* main */
+main {
+    width: auto;
+    margin: 120px 5vw 50px 5vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+main > h1 {
+    align-self: flex-start;
+}
+
+h3 {
+    font-size: 1.7rem;
+
+    align-self: flex-start;
+}
+
+#mainDiv1, #mainDiv2 {
+    width: 96%;
+}
+
+.divP {
+    width: 96%;
+    margin: 15px;
+
+    text-align: justify;
+    font-size: 1.2rem;
+    line-height: 2rem;
+}

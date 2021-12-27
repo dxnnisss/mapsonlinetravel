@@ -1,0 +1,477 @@
+/* HEADER, FOOTER */
+
+/* import foregin fonts from google */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+/* font-family: 'Roboto Condensed', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+/* font-family: 'Lobster', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Grechen+Fuemen&display=swap');
+/* font-family: 'Grechen Fuemen', cursive; */
+
+/* predefined animation */
+@keyframes change-color {
+    from {
+        color: black ;
+        text-shadow: 1px 1px #ddd, -1px -1px#ddd;
+
+        transition: 1s;
+    }
+
+    to {
+        color: white;
+        text-shadow: 1px 1px black, -1px -1px black;
+
+        transition: 1s;
+    }
+}
+
+@keyframes shake {
+    0%,
+    100% {
+      transform: translateX(0%);
+      transform-origin: 50% 50%;
+    }
+  
+    15% {
+      transform: translateX(-30px) rotate(-6deg);
+    }
+  
+    30% {
+      transform: translateX(15px) rotate(6deg);
+    }
+  
+    45% {
+      transform: translateX(-15px) rotate(-3.6deg);
+    }
+  
+    60% {
+      transform: translateX(9px) rotate(2.4deg);
+    }
+  
+    75% {
+      transform: translateX(-6px) rotate(-1.2deg);
+    }
+}
+
+/* 
+--------------------------- GENERAL CSS -----------------------------
+*/
+
+/* reset */
+* {
+    margin: 0px;
+    font-family: 'Roboto Condensed', sans-serif;
+    overflow-x: hidden; /* to hide the horizontal scroll */
+}
+
+/* change cursor to pointer when hovering button */
+.btnHover:hover {
+    cursor: pointer;
+
+    color: grey;
+}
+
+/* div to grey out viewport */
+#vpGreyOut {
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+
+    position: fixed;
+    display: none;
+
+    background-color: #ccc;
+    opacity: 0.6;
+}
+
+/* predefined flex properties classes */
+.flex-c-c {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-sa-c {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flex-sb-c {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.flex-fs {
+    align-items: flex-start;
+}
+
+/* 
+------------------ HEADER SECTION FOR MASTER (GENERAL) -------------------
+*/
+
+/* wrapper for header */
+header {
+    height: 85px;
+    width: 100vw;
+    z-index: 100;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+
+    background: linear-gradient( #dddddd, #cccccc, #bbbbbb);
+}
+
+/* logo div */
+.logoDiv {
+    width: 15vw;
+    margin-left: 10px;
+    min-width: 220px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoDiv img {
+    margin-left: 20px;
+    transition: 0.5s;
+}
+
+.logoDiv img:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+/* entire search div */
+#searchDiv, #userNav {
+    width: 55vw;
+    height: 65px;
+    min-width: auto;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    border: grey 2px solid;
+    border-radius: 20px;
+    box-shadow: 2px 2px 3px #555555;
+    background-color: transparent;
+
+    font-size: 1.15rem;
+    text-shadow: 2px 2px 2px white;
+    line-height: 22px;
+
+    transition: 0.5s;
+}
+
+#searchDiv:hover, #userNav:hover {
+    box-shadow: 4px 4px 3px #555555;
+
+    transition: 0.5s;
+}
+
+#searchDiv input, #searchDiv select {
+    height: 25px;
+    margin: 2px;
+    padding: 2px 2px 2px 5px;
+
+    border: none;
+    border-radius: 7px;
+
+    font-size: 1rem;
+}
+
+#searchDiv input[type='date']:hover {
+    cursor: pointer;
+}
+
+#searchDiv button {
+    width: 55px;
+    height: 50px;
+
+    border: none;
+
+    font-size: 1.5rem;
+
+    background-color: transparent;
+
+    transition: 0.5s;
+}
+
+#searchDiv button:hover {
+    font-size: 1.8rem;
+
+    cursor: pointer;
+
+    transition: 0.5s;
+}
+
+/* login icon div */
+.loginDiv {
+    width: 15vw;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#loginIcon {
+    height: 30px;
+    width: 30px;
+
+    transition: 0.5s;
+}
+
+#loginIcon:hover {
+    height: 40px;
+    width: 40px;
+
+    cursor: pointer;
+
+    transition: 0.5s;
+}
+
+/* 
+-------------- POPUP OVERLAY FOR LOGIN, SIGNUP, JOIN AS HOST ----------------
+*/
+
+/* popup overlay */
+#generalOverlay, #login, #signup, #joinAsHost, #userOverlay {
+    width: 22vw;
+    min-width: 300px;
+    height: 350px;
+    margin-left: -11vw;
+    margin-top: -175px;
+    z-index: 100;
+
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    display: none;
+    flex-direction: column;
+    border-radius: 20px;
+
+    font-size: 1.2rem;
+
+    background: linear-gradient(135deg, #dddddd, #cccccc, #bbbbbb);
+}
+
+#generalOverlay input, 
+#login input, 
+#signup input, 
+#joinAsHost input, 
+#userOverlay input {
+    padding-left: 5px;
+
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+}
+
+#signup, #joinAsHost {
+    height: 450px;
+    margin-top: -225px;
+}
+
+.overlayTitle {
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+.overlayBtn {
+    width: 60%;
+    height: 55px;
+
+    border-radius: 10px;
+
+    background-color: white;
+
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.overlayBtn:hover {
+    cursor: pointer;
+
+    color: white;
+
+    background-color: #888888;
+
+    transition: 0.3s;
+}
+
+body > form input {
+    height: 25px;
+    width: 15vw;
+    margin: 2px;
+    padding: 2px 2px 2px 5px;
+
+    border: none;
+    border-radius: 7px;
+}
+
+#loginBtn, #signupBtn, #joinBtn {
+    height: 35px;
+    width: 8vw;
+
+    border: none;
+    border-radius: 7px;
+
+    background-color: white;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+#loginBtn:hover, #signupBtn:hover, #joinBtn:hover {
+    background-color: #888888;
+
+    color: white;
+
+    transition: 0.3s;
+}
+
+.forgetPW {
+    font-size: 1rem;
+}
+
+.forgetPW:hover {
+    color: grey;
+    cursor: pointer;
+}
+
+#backgroundImage {
+    width: 100vw;
+    height: 100vh;
+    z-index: -100;
+
+    position: fixed;
+
+    background-image: url(../images/bgimg1.jpg);
+    background-size: cover;
+}
+
+
+/* 
+------------------ FOOTER SECTION FOR MASTER (GENERAL) -------------------
+*/
+
+/* wrapper for footer */
+hr {
+    width: 90vw;
+    margin: auto;
+}
+
+footer {
+    height: 70px;
+    width: auto;
+    margin: 20px 5vw 0px 5vw;
+}
+
+footer > nav {
+    float: left;
+}
+
+footer > div {
+    width: 13%;
+    float: right;
+    display: flex;
+}
+
+footer > nav > a {
+    color: black;
+    text-decoration: none;
+}
+
+footer > nav > a:hover {
+    color: #555555;
+    text-decoration: underline;
+}
+
+#socialMedia > a {
+    margin: 0px 10px 0px 10px;
+}
+
+/* 
+------------------ HEADER SECTION FOR MASTER (USER) -------------------
+*/
+
+#userNav a {
+    width: 20%;
+    height: 70%;
+
+    border: none;
+    border-radius: 10px;
+
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    text-shadow: none;
+
+    background-color: white;
+
+    transition: 0.5s;
+}
+
+#userNav a:hover {
+    background-color: grey;
+
+    color: white;
+    font-size: 1.2rem;
+
+    transform: scale(1.05);
+
+    transition: 0.5s;
+}
+
+/* userIcon with active logged in session */
+#userOverlay {
+    width: 20vw;
+    height: 300px;
+    margin-left: -10vw;
+    margin-top: -100px;
+
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    display: none;
+    flex-direction: column;
+    border-radius: 20px;
+
+    background: linear-gradient(135deg, #dddddd, #cccccc, #bbbbbb);
+}
+
+
+
+
+/* 
+--------------------------- MISCELLANEOUS ----------------------------
+*/
+
+main > hr {
+    margin: 30px 0 30px 0;
+
+    border: 1px solid grey;
+
+    background-color: grey;
+}
+
+main + hr {
+    border: 1px solid black;
+
+    background-color: black;
+}

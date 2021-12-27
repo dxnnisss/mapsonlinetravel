@@ -1,0 +1,87 @@
+@import 'master.css';
+
+/* main */
+main {
+    width: auto;
+    margin: 120px 5vw 50px 5vw;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: top;
+}
+
+#faq > div {
+    width: 90%;
+    margin-bottom: 30px;
+}
+
+hr + p {
+    margin: 0 0 50px 30px;
+
+    font-size: 1.5rem;
+}
+
+p > a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+P > a:hover {
+    /* text-decoration: underline; */
+    color: grey;
+}
+
+p {
+    text-align: justify;
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+.question {
+    width: 100%;
+    padding: 20px;
+    /* margin-bottom: 20px; */
+    
+    border: none;
+    display: block;
+
+    color: black;
+    text-align: left;
+    font-size: 1.5rem;
+
+    background-color: #bbb;
+    transition: 0.5s;
+
+    cursor: pointer;
+}
+
+/* insert something after the end of [selected] */
+.question::after {
+    content: '\25be'; /* hex unicode for down triangle sign */
+    float: right;
+    transform: scale(1.5); /* increase the size by scale of 2 */
+}
+
+.question:hover, .questionActive {
+    color: white;
+
+    background-color: grey;
+}
+
+.questionActive::after {
+    content: '\25b4';
+}
+
+.answer {
+    padding: 0 30px 0 30px;
+    max-height: 0;
+
+    /* controls what happens to content that is too big to fit into an area */
+    overflow: hidden;
+
+    background-color: #eee;
+
+    transition: 0.5s;
+}

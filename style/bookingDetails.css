@@ -1,0 +1,125 @@
+@import 'master.css';
+
+/* main */
+main {
+    width: auto;
+    margin: 120px 5vw 50px 5vw;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: top;
+}
+
+h1 + hr {
+    margin-bottom: 10px;
+}
+
+#userNav #myBookings {
+    background-color: grey;
+
+    color: white;
+
+    transition: 0.5s;
+}
+
+#mainDiv1 {
+    width: 100%;
+    padding: 0 0 0 50px;
+
+    /* background-color: cyan; */
+}
+
+#mainDiv1 hr {
+    margin: 15px 0 10px 0;
+
+    background-color: navy;
+    border-color: navy;
+}
+
+.subTitle {
+    width: calc(100% - 100px);
+}
+
+.subTitle h2 {
+    font-style: italic;
+    margin-top: 15px;
+}
+
+.subMain {
+    width: calc(100% - 100px);
+    margin: 10px 0 20px 0;
+
+    border-radius: 15px;
+
+    background-color: rgba(0, 255, 255, 0.3);
+
+    transition: 0.5s;
+}
+
+.subMain:hover {
+    background-color: rgba(0, 255, 255, 0.45);
+
+    transition: 0.5s;
+}
+
+.item {
+    margin: 0 0 25px 0;
+
+    font-size: 1.2rem;
+}
+
+.itemLabel {
+    width: 200px;
+    margin: 0 15px 0 50px;
+}
+
+.itemLabel::after {
+    content: ':';
+    float: right;
+}
+
+.btnDiv {
+    width: calc(100% - 100px);
+    height: 100px;
+}
+
+#payAbort {
+    width: 100%;
+    height: 100px;
+}
+
+/* --------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------- */
+.actionBtn {
+    height: 55px;
+    width: 160px;
+    margin: 0 20px 0 20px;
+
+    border-radius: 10px;
+
+    color: black;
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    /* equal to the parent height, so that vertically centered */
+    line-height: 55px;
+    
+    background-color: rgba(0, 255, 255, 0.3);
+
+    transition: 0.5s;
+}
+
+.actionBtn:hover {
+    font-size: 1.35rem;
+
+    transform: scale(1.15);
+
+    background-color: rgba(0, 255, 255, 0.5);
+
+    cursor: pointer;
+
+    transition: 0.5s;
+}

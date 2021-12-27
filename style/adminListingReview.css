@@ -1,0 +1,19 @@
+@import url('adminBookingPayment.css');
+@import url('adminManageAccount.css');
+
+#biggertableCell{
+    min-width: 20vw;
+}
+
+.nav1 {
+    background-color:  rgb(72, 78, 90) !important; 
+}
+
+.nav4 {
+    background-color:  rgb(72, 78, 90) !important; 
+}
+
+.nav3{
+    background-color: rgb(168, 158, 158);
+}
+

@@ -1,0 +1,84 @@
+@import 'master.css';
+
+/* main */
+main {
+    width: auto;
+    margin: 120px 5vw 50px 5vw;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: top;
+}
+
+#loremP, #mainDiv2 {
+    text-align: justify;
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+div h3 {
+    font-size: 1.7rem;
+}
+
+#mainDiv1-left {
+    width: 45%;
+    height: 400px;
+
+    /* specifies how much the item will grow relative to the 
+    rest of the flexible items inside the same container */
+    flex-grow: 0.7;
+}
+
+main > h3 {
+    margin: 20px 0 0 25px;
+    font-size: 1.7rem;
+
+    justify-content: left;
+}
+
+#mainDiv1, #mainDiv2 {
+    margin: 25px;
+}
+
+#mainDiv3 {
+    width: 80%;
+
+    align-self: center;
+}
+
+#mission, #vision {
+    width: 40%;
+    height: 150px;
+    margin-top: 30px;
+
+    border-radius: 30px;
+
+    background: linear-gradient(135deg, #ccc, #aaa, #888);
+}
+
+#mainDiv3 div span {
+    width: 80%;
+
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+#mainDiv3 h3 {
+    padding: 5px;
+
+    text-shadow: 2px 2px 2px white;
+    font-size: 2.5rem;
+    font-style: italic;
+}
+
+#mission:hover, #vision:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+p::first-letter {
+    font-size: 1.7rem;
+    font-style: italic;
+    font-weight: bold;
+}

@@ -1,0 +1,136 @@
+@import url('adminManageAccount.css');
+
+.parentbox{
+    margin-top: 50px;
+    
+    justify-content: space-around;
+    
+}
+
+.nav1 {
+    background-color:  rgb(72, 78, 90) !important; 
+}
+
+.nav3{
+    background-color: rgb(168, 158, 158);
+}
+
+
+.images{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 50vw;
+    height: 150px;
+}
+
+.ALD_content{
+    
+    margin: 20px;
+    padding: 5px;
+    background-color: cyan;
+    border-radius: 10px;
+    
+}
+
+.ALD_bigcontent{
+    
+    margin: 20px;
+    padding: 5px;
+    background-color: cyan;
+    border-radius: 12px;
+    border: 1px solid black;
+    width: 50vw;
+}
+
+.text-row{
+    margin: 20px;
+    padding: 20px;
+    background-color: cadetblue;
+    border-radius: 12px;
+}
+
+.ALD_bigcontainer{
+    display: flex;
+    justify-content: space-around;
+}
+
+.ALD_columnright{
+    
+    margin-top: 100px;
+    width: 300px;
+    height: 400px;
+    background-color: rgb(129, 52, 52,0.8);
+    border: black 1px solid;
+    border-radius: 15px;
+    
+    
+}
+
+#DP{
+
+    padding: 30px;
+    margin: 8px;
+    background-color: rgba(255, 101, 101, 0.8);
+    width: 120px;
+}
+.ALD_title::after{
+    content: ':';
+    
+}
+.ALD_rcrow{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    margin-top: 40px;
+}
+
+.boxrounding{
+    border: 2px solid black;
+    border-radius: 12px;
+    width: 200px;
+    height: 130px;
+    align-items: center;
+    text-align: center;
+    
+}
+
+#ALD_review{
+    padding: 30px;
+    width: 120px;
+    margin: 8px;
+    background-color: rgba(255, 101, 101, 0.8);
+    text-decoration: none;
+
+}
+
+#ALD_action{
+    padding: 30px;
+    width: 120px;
+    margin: 8px;
+    background-color: rgba(255, 101, 101, 0.8);
+    text-decoration: none;
+}
+
+#ALD_ban{
+    padding: 30px;
+    width: 120px;
+    margin: 8px;
+    background-color: rgba(255, 101, 101, 0.8);
+    text-decoration: none;
+
+
+}
+
+#ALD_status{
+    margin-top: 30px;
+    padding: 20px 40px 20px 40px;
+    
+    background-color: rgba(255, 101, 101, 0.8);
+    
+}
+
+.ALD_image{
+    width: 200px;
+    height: 150px;
+}

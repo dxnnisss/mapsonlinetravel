@@ -1,0 +1,197 @@
+@import url('master.css');
+@import url('hostOverlay.css');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+/* font-family: 'Roboto Condensed', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+/* font-family: 'Lobster', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Grechen+Fuemen&display=swap');
+/* font-family: 'Grechen Fuemen', cursive; */
+
+/*Entirety */
+
+* {
+    margin: 0px;
+    font-family: 'Roboto Condensed', sans-serif;
+    overflow-x: hidden; 
+    /* TO HIDE HORIZONTAL SCROLL */
+}
+
+#loginIcon {
+    height: 30px;
+    width: 30px;
+	border-radius:10px;
+    transition: 0.5s;
+}
+
+/* 
+--------------------------------------------------------------------- 
+*/
+
+body {
+   
+    height:100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* HOST MAIN PAGE */
+
+main {
+    width: auto;
+    margin: 120px 80px 50px 80px;
+    justify-content: space-around;
+    text-align: center;
+    min-height: 70vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+}
+  
+#greetings {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 25px;
+    margin-left: 25px;
+    height: 150px;
+    width: auto;
+    line-height: 70px;
+    border-radius: 10px;
+    background-color: #20668a;
+    font-size: 25px;
+}
+
+.walletDropdown {
+    overflow: hidden;
+    margin-left: 25px;
+    float:left;
+    height: 100px;
+    width: 45%;
+    line-height: 100px;
+    border-radius: 10px;
+}
+
+.functionDropdown {
+    overflow: hidden;
+    margin-right: 25px;
+    float:right;
+    height:100px;
+    width: 45%;
+    line-height: 100px;
+    border-radius: 10px;
+}
+
+.dropBtn {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #607d8b99;
+    color: black;
+    border: none;
+    height: 100px;
+    width: 100%;
+    border-radius: 10px;
+    font-size: 100%;
+}
+
+/* Dropdown Menu for Wallet Menu */
+
+.walletDropContent {
+    display:none;
+    position: absolute;
+    background-color: #607d8b99;
+    width: 38%;
+    right: 52%;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.walletDropContent a {
+    color:black;
+    padding: 0px 16px;
+    text-decoration: none;
+    display: flex;
+}
+
+.walletDropContent a:hover {
+    background-color: #ddd;
+}
+
+.walletDropdown .dropBtn:hover {
+    background-color: white;
+}
+
+.walletDropdown:hover .walletDropContent {
+    display:block;
+}
+
+.walletDropdown:hover .dropBtn {
+    background-color: white;
+}
+
+/* Dropdown Menu for Functions Menu */
+
+.dropContent {
+    display: none;
+    position: absolute;
+    background-color: #607d8b99;
+    width: 38%;
+    left: 52%;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropContent a {
+    color: black;
+    padding: 0px 16px;
+    text-decoration: none;
+    display: flex;
+}
+
+.dropContent a:hover {
+    background-color: #ddd;
+}
+
+.functionDropdown .dropBtn:hover {
+    background-color: white;
+}
+
+.functionDropdown:hover .dropContent {
+    display: block;
+}
+
+.functionDropdown:hover .dropBtn {
+    background-color: white;
+}
+
+
+/* Transaction */
+
+#transaction{
+    margin-right: 25px;
+    margin-left: 25px;
+    height: 150px;
+    width: auto;
+    line-height: 150px;
+    border-radius: 10px;
+    background-color: #20668a;
+    font-size: 40px;
+}
+
+input[type=text],input[type=tel], input[type=date], input[type=number], textarea, select {
+    width: 30%;
+    padding: 5px;
+    margin: 0px 0 22px 0;
+    display: inline-block;
+    font-size:10pt;
+}
+
+
+
+

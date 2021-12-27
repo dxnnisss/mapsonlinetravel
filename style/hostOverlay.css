@@ -1,0 +1,57 @@
+#vpGreyOut {
+    width: 100vw;
+    height: 100vh;
+
+    position: fixed;
+    display: none;
+
+    background-color: #ccc;
+    opacity: 0.6;
+}
+.overlayTitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.overlayBtn {
+    width: 60%;
+    height: 45px;
+
+    border-radius: 10px;
+
+    background-color: white;
+
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+.overlayBtn:hover {
+    cursor: pointer;
+    color: white;
+}
+.flex-c-c {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex-sa-c {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#hostOverlay {
+    width: 20vw;
+    height: 300px;
+    margin-left: -10vw;
+    margin-top: -100px;
+
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    display: none;
+    flex-direction: column;
+    border-radius: 20px;
+
+    background: linear-gradient(135deg, #dddddd, #cccccc, #bbbbbb);
+    z-index:100;
+}

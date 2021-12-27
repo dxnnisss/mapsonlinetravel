@@ -1,0 +1,123 @@
+@import 'master.css';
+
+/* main */
+main {
+    width: auto;
+    margin: 120px 5vw 50px 5vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: top;
+}
+
+#userNav #myInfo {
+    background-color: grey;
+
+    color: white;
+
+    transition: 0.5s;
+}
+
+#profile {
+    width: 80%;
+    margin-top: 30px;
+
+    align-self: center;
+
+    font-size: 1.4rem;
+}
+
+#picSection {
+    width: 30%;
+}
+
+#picSection > img {
+    width: 70%;
+    height: auto;
+
+    border: 2px solid grey;
+    box-shadow: 2px 2px 2px grey;
+}
+
+#uPicture {
+    margin: 50px 0 50px 0;
+
+    font-size: 1.2rem;
+}
+
+#textSection {
+    width: 55%;
+    padding-top: 20px;
+
+    border-radius: 20px;
+
+    line-height: 2.5rem;
+
+    background-color: rgba(0, 255, 255, 0.3);
+
+    transition: 0.5s;
+}
+
+#textSection:hover {
+    background-color: rgba(0, 255, 255, 0.45);
+
+    transition: 0.5s;
+}
+
+#textSection > div {
+    margin: 0 0 30px 0;
+}
+
+#radioForGender, 
+input[type='email'], 
+input[type='text'], 
+input[type='tel'], 
+input[type='date'], 
+textarea {
+    width: 400px;
+    height: 25px;
+    padding: 5px ;
+
+    border: 2px solid grey;
+    border-radius: 5px;
+
+    font-size: 1.1rem;
+}
+
+#radioForGender {
+    height: 40px;
+
+    border: none;
+}
+
+ button, #userEditProfile{
+    width: 150px ;
+    height: 40px ;
+
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+button:hover, #userEditProfile:hover {
+    background-color: grey;
+
+    color: white;
+
+    transition: 0.5s;
+
+    cursor: pointer;
+}
+
+textarea {
+    height: auto;
+}
+
+#userSaveProfile {
+    display: none;
+}

@@ -1,0 +1,280 @@
+
+main {
+    width: auto;
+    margin: 80px 0px 50px 0px;
+    font-weight: bold;
+    
+    
+}
+
+.radius_box{
+    border-radius: 10px;
+}
+
+* {box-sizing: border-box}
+
+.topNav{
+    overflow: auto;
+    background-color: rgb(72, 78, 90);
+    width: 100%;
+    
+}
+
+.topNav a{
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 12px ;
+    text-decoration: none;
+    font-size: 17px;
+    width: 25%;
+
+}
+
+.topNav a:hover{
+    background-color: rgb(168, 158, 158);
+    cursor: pointer;
+    color: black;
+}
+
+.nav1{
+    background-color: rgb(168, 158, 158);
+}
+
+@media screen and (max-width: auto) {
+    .topNav a {
+      float: none;
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+  }
+
+.parentbox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
+
+.childbox{
+    display: flex;
+    /* width: 50vw; */
+    
+    margin: 10px;
+    flex: 0 0 48%;
+    border-radius: 10px;
+    border: solid black 2px;
+    color: black;
+    
+}
+
+
+#AMA_childbox{
+    background-color: rgb(150, 150, 150);
+    justify-content: space-around;
+    text-decoration: none;
+    
+}
+
+#AMA_childbox:hover{
+    background-color: rgb(182, 182, 182);
+    cursor: pointer;
+}
+
+.image{
+    display: flex;
+    margin: 5px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+#AMA_images{
+    width: 100px;
+    height: 100px;
+    align-self: center;
+}
+
+
+.columnmid{
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    font-size: 20px;
+}
+
+.topmid{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 5px;
+    
+    width: 300px;
+    
+}
+
+.columnright{
+    display: flex;
+    flex-direction: column;
+    
+    width: 200px;
+    height: 150px;
+    
+    
+}
+
+.btmmid{
+    height: 60%;
+    width: 280px;
+    margin: 5px;
+    
+    border-radius: 12px;
+    border: solid 2px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+
+.AMA_textrowright{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    margin: 20px 5px 5px 5px;
+    border: black solid 2px;
+    border-radius: 12px;
+}
+.tname{
+    min-width: 60px;
+}
+
+
+.search_bar{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(158, 156, 156);
+    border: 1px solid black;
+    width: 400px;
+    height: 50px;
+    
+    align-items: center;
+    border-radius: 12px;
+    margin: 15px 0 0 40px;
+}
+
+.search_input{
+    margin-left: 10px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+.filterBox{
+    margin-left: 10px;
+    border: 1px black solid;
+    border-radius: 12px;
+    width: 50px;
+    height: 30px;
+}
+
+.button{
+    margin-left: 20px;
+    width: 50px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+.button:hover,.childbox:hover{
+    cursor: pointer;
+    background-color: #bbbbbb;
+}
+
+
+.AMA_textrow{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 200px;
+    
+}
+
+.content{
+    
+    min-width: 160px;
+}
+
+#generalOverlay,#actConfirm,#banConfirm,#disConfirm{
+    width: 20vw;
+    min-width: 300px;
+    height: 300px;
+    margin-left: -10vw;
+    margin-top: -150px;
+
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    display: none;
+    flex-direction: column;
+    border-radius: 20px;
+
+    background: linear-gradient(135deg, #dddddd, #cccccc, #bbbbbb);
+}
+
+#vpGreyOut {
+    width: 100vw;
+    height: 100vh;
+
+    position: fixed;
+    display: none;
+
+    background-color: #ccc;
+    opacity: 0.6;
+}
+
+.overlayBtn {
+    width: 60%;
+    height: 45px;
+
+    border-radius: 10px;
+
+    background-color: white;
+
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.flex-c-c {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex-sa-c {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.overlayTitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#backgroundImage {
+    width: 100vw;
+    height: 100vh;
+    z-index: -100;
+
+    position: fixed;
+
+    background-image: url(../images/bgimg1.jpg);
+    background-size: cover;
+}
+
+.font_20px{
+    font-size: 20px;
+}

@@ -1,0 +1,44 @@
+@import url('master.css');
+
+#trxn, #cusReview {
+    border-collapse: collapse;
+}
+
+#trxn td, #cusReview td {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    color: black;
+}
+
+#trxn tr, #cusReview tr {
+    background-color: #48b1bd;
+}
+
+#trxn tr:hover, #cusReview tr:hover {
+    background-color: #ddd;
+}
+
+#trxn tr:nth-child(even), #cusReview tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+.walletBal {
+    background-color: rgb(199, 228, 241);
+    border-radius: 10px;
+    text-indent: 30px;
+    height: 45px;
+    width: 30%;
+    margin: 0 0 0 25px;
+    align-self: center;
+}
+
+
+
+.walletBalName {
+    margin: 15px 30px 0 0;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}

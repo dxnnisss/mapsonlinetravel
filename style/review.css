@@ -1,0 +1,147 @@
+@import 'master.css';
+
+/* main */
+main {
+    width: auto;
+    margin: 120px 5vw 50px 5vw;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: top;
+}
+
+#userNav #myReviews {
+    background-color: grey;
+
+    color: white;
+
+    transition: 0.5s;
+}
+
+#ratingInfo {
+    width: 50%;
+    height: 700px;
+
+    align-self: center;
+
+    border-radius: 15px;
+
+    background-color: rgba(0, 255, 255, 0.3);
+
+    transition: 0.5s;
+}
+
+#ratingInfo:hover {
+    background-color: rgba(0, 255, 255, 0.45);
+
+    transition: 0.5s;
+}
+
+#ratingInfo label {
+    margin-top: 20px;
+
+    font-size: 1.35rem;
+    font-weight: bold;
+}
+
+#ratingInfo input[type='text'], textarea {
+    width: 400px;
+    height: 25px;
+    padding: 5px ;
+
+    border: 2px solid grey;
+    border-radius: 5px;
+
+    font-size: 1.1rem;;
+}
+
+textarea {
+    height: 100px;
+    margin-bottom: 25px;
+}
+
+#starDiv {
+    width: 400px;
+}
+
+#starsContainer {
+    width: 300px;
+
+    align-self: center;
+}
+
+.stars {
+    color: yellow;
+    font-size: 3rem;
+    text-shadow: 0.4px 0.4px  black, -0.4px -0.4px black;
+
+    cursor: pointer;
+}
+
+#submitBtn {
+    height: 50px;
+    width: 160px;
+    margin: 0 20px 0 20px;
+	padding: 0;
+
+	border: 1.5px solid black;
+    border-radius: 10px;
+
+    color: black;
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    /* equal to the parent height, so that vertically centered */
+    line-height: 45px;
+    
+    background-color: white;
+
+    transition: 0.5s;
+}
+
+#submitBtn:hover {
+    font-size: 1.4rem;
+
+    background-color: rgb(136, 224, 239);
+
+    cursor: pointer;
+
+    transition: 0.5s;
+}
+
+#delete {
+    height: 50px;
+    width: 160px;
+    margin-top: 30px;
+	padding: 0;
+
+    color: black;
+    font-size: 1.3rem;;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    line-height: 50px;
+
+    border-radius: 10px;
+
+    align-self: center;
+
+    background-color: rgba(0, 255, 255, 0.3);
+
+    transition: 0.5s;
+}
+
+#delete:hover {
+    height: 60px;
+    width: 180px;
+    margin-top: 25px;
+
+    font-size: 1.4rem;
+    line-height: 60px;
+
+    background-color: rgba(0, 255, 255, 0.45);
+
+    transition: 0.5s;
+}

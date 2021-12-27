@@ -1,0 +1,113 @@
+@import url('adminManageAccount.css');
+
+.nav1 {
+    background-color:  rgb(72, 78, 90) !important; 
+}
+
+.nav2{
+    background-color: rgb(168, 158, 158);
+}
+.bigcontainer{
+   
+    width: 90%;
+    margin: 30px auto 0 auto;
+}
+
+.mediumtext{
+    font-size: 20px;
+}
+.tittle_text::after{
+    content: ":";
+    float: right;
+}
+
+.tittle_text{
+    width: 40%;
+    height: 26px;
+    text-align: center;
+}
+
+.toprow,.secrow,.thirdrow,.fourthrow{
+    display: flex;
+    justify-content: space-around;
+    flex-direction:row;
+    width: 100%;
+    align-items: center;
+}
+
+.Acontent{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 45%;
+    border: black 1px solid;
+    background-color: rgb(170, 168, 168);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 10px;
+}
+
+
+.content_text{
+   min-width: 40%;
+   text-align: center;
+}
+
+
+hr{
+   border-top: 4px black solid;
+}
+
+.message_detail{
+    display: flex;
+    width: 95%;
+    border-radius: 12px;
+    min-height: 100px;
+    justify-content: space-around;
+    border: 1px black solid;
+    margin: 20px auto 40px auto ;
+    background-color:rgb(170, 168, 168) ;
+    align-items: center;
+}
+#title_msg{
+    width: 15%;
+    text-align: center;
+}
+
+
+#content_msg{
+    max-width: 60%;
+    min-height: 20px;
+}
+
+#form_row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 90vw;
+    margin-top: -20px;
+}
+
+#reply_box, #select_action,#submitbtn{
+    margin: 30px;
+    padding: 15px 25px 15px 25px;
+    text-decoration: none;
+    background-color: rgb(149, 156, 155);
+    border: black 1px solid;
+    border-radius: 12px;
+}
+
+#ticketID{
+    margin: 10px;
+    text-align: center;
+    padding: 10px 5px 10px 5px;
+    text-decoration: none;
+    background-color: rgb(149, 156, 155);
+    border: black 1px solid;
+    border-radius: 12px;
+}
+
+#select_action:hover,#reply_box:hover, #submitbtn:hover{
+    cursor: pointer;
+    background-color: rgb(190, 190, 190);
+}

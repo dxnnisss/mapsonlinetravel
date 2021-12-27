@@ -1,0 +1,141 @@
+/* some components are sharing CSS with bookingDetails.css */
+@import 'bookingDetails.css';
+
+/* to disable the header and footer */
+header, footer {
+    /* whether or not an element reacts to pointer events */
+    /* but tabs still can get the elements, JS will do the rest */
+    pointer-events: none;
+
+    display: block;
+
+    font-size: 3rem;
+    text-align: center;
+    font-weight: bold;
+    /* line-height same as parent to vertically center */
+    line-height: 85px; 
+}
+
+body {
+	background-image: url('../images/bgimg1.jpg');
+	background-size: cover;
+}
+
+#ctCard {
+	width: 350px;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+/* ct card number and cvv */
+#ctCard input[type='text'], #cvv {
+	width: 60px;
+	height: 25px;
+	padding: 3px;
+
+	border-radius: 5px;
+
+	font-size: 1.2rem;
+	letter-spacing: 4px;
+	text-align: center;
+}
+
+/* card holder name */
+#chName {
+	height: 25px;
+	width: 340px;
+	padding: 5px;
+
+	border-radius: 5px;
+
+	font-size: 1.2rem;
+	letter-spacing: 2px;
+}
+
+/* expiry */
+input[type='month'] {
+	height: 25px;
+	width: 250px;
+	padding: 5px;
+
+	border-radius: 5px;
+
+	font-size: 1.2rem;
+	letter-spacing: 2px;
+}
+
+/* agree checkbox */
+input[type='checkbox'] {
+	height: 15px;
+	width: 15px;
+	margin: 0 30px 0 70px;
+
+	border-radius: 5px;
+
+	font-size: 1.2rem;
+}
+
+input:checked {
+	transform: scale(1.4);
+}
+
+#agreement {
+	margin-top: 40px;
+
+	transition: 0.5s;
+}
+
+#agreement:hover {
+	color: navy;
+
+	transition: 0.5s;
+}
+
+/* hyphens between ct card num */
+#ctCard span {
+	font-size: 1.5rem;
+	font-weight: bold;
+
+	display: block;
+}
+
+#payAbort button {
+    height: 55px;
+    width: 160px;
+    margin: 0 20px 0 20px;
+	padding: 0;
+
+	border: 1.5px solid black;
+    border-radius: 10px;
+
+    color: black;
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    /* equal to the parent height, so that vertically centered */
+    line-height: 50px;
+    
+    background-color: white;
+
+    transition: 0.5s;
+}
+
+#payAbort button:hover {
+    font-size: 1.35rem;
+
+    transform: scale(1.15);
+
+	box-shadow: 2px 2px 2px grey;
+
+    background-color: rgb(136, 224, 239);
+
+    cursor: pointer;
+
+    transition: 0.5s;
+}
+
+

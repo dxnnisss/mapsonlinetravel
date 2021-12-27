@@ -1,0 +1,350 @@
+@import 'master.css';
+
+main {
+    width: auto;
+    margin: 120px 5vw 50px 5vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: top;
+
+    font-size: 1.2rem;
+}
+
+.topDiv_btm{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    
+    height: 40px;
+}
+.review_box{
+    width: 300px;
+
+}
+
+* {box-sizing: border-box}
+
+.myImages {
+    display: none;
+}
+
+/* to avoid crashing the css from master.css*/
+/* img {
+    vertical-align: middle;
+    min-width: 70vw;
+    height: 500px;
+
+} */
+
+/* Slideshow container */
+.B_container {
+  max-width: 70vw;
+  height:510px;
+  position: relative;
+  margin: auto;
+  margin-top: 20px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.star {
+  margin: -15px 2% 0 2%;
+  font-size: 1.7rem;
+  width: 96%;
+  color: yellow;
+  text-shadow:black 1px 1px;
+}
+
+#starInfo {
+  margin: 10px 0 15px 2%;
+  font-size: 1.1rem;
+}
+
+.topDiv_btm{
+  display: flex;
+  flex-direction: row;
+  width: 90vw;
+  height: 70px;
+  align-items: center;
+}
+
+#review_top, #location_top{
+  min-width: 300px;
+}
+
+.C_Container {
+  display:flex;
+  padding:5px;
+
+}
+
+#C_leftColumn {
+  width:55%;
+  float: left;
+  height:auto;
+}
+
+.itemTitle {
+  font-style: italic;
+  line-height: 35px;
+}
+
+.C_childbox {
+  flex: 0 0 350px;
+  padding: 10px 20px 15px 20px;
+  margin:0 0 15px 0;
+  height: auto;
+  width: 100%;
+  background-color: rgba(255, 182, 193, 0.7);
+  border-radius: 10px;
+  padding:10px;
+  text-align: justify;
+  line-height: 27px;
+  transition: 0.5s;
+}
+
+.C_childbox:hover {
+  background-color: rgba(255, 182, 193, 0.85);
+  transition: 0.5s;
+}
+
+#bookingForm {
+  padding: 2%;
+  width:28%;
+  align-self: start;
+  line-height: 30px;
+  background-color: rgba(199, 228, 241, 0.6);
+  border-radius: 10px;
+  text-align: center;
+  transition: 0.5s;
+}
+
+#bookingForm:hover {
+  background-color: rgba(199, 228, 241, 0.8);
+transition: 0.5s;
+}
+
+#bookingForm input[type='text'] {
+  height: 27px;
+  width: 120px;
+  margin-top: 5px;
+  margin-bottom: 3px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+#bookingForm button {
+  margin-top: 20px;
+  padding: 0 10px 0 10px;
+  height: 35px;
+  font-size: 1.15rem;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+  background-color: white;
+  transition: 0.5;
+}
+
+#bookingForm button:hover {
+  cursor: pointer;
+  color: white;
+  background-color: #888888;
+  transition: 0.5s;
+}
+
+#C_rightColumn {
+  flex-direction: row;
+}
+
+.C_rcTopBox, .C_rcBtmBox {
+  flex: 0 0 200px;
+  height: 75px;
+
+  background-color:rgba(135, 206, 250, 0.6);
+  border-radius: 10px;
+  padding:5px;
+  margin-top: 15px;
+  transition: 0.5s;
+}
+
+.C_rcTopBox:hover, .C_rcBtmBox:hover {
+  background-color:rgba(135, 206, 250, 0.8);
+  transition: 0.5s;
+}
+
+.D_container {
+  margin: 10px 0 0 35px;
+  display: flex;
+  padding:5px;
+  border-style: solid;
+  flex-direction: column;
+  width:93.7%;
+}
+
+
+#D_reviews {
+padding:5px;
+width: 100%;
+height: auto;
+align-self: center;
+text-align: center;
+}
+
+#D_reviews span {
+  font-size: 1.4rem;
+  font-style: italic;
+  padding: 5px;
+}
+
+.D_children {
+  margin:5px;
+  height: auto;
+  width: 90%;
+  background-color: rgba(153, 238, 171, 0.65);
+  border-radius: 15px;
+  padding:10px 20px 15px 10px;
+  align-self: center;
+  text-align: justify;
+  transition: 0.5s;
+}
+
+.D_children:hover {
+  background-color: rgba(153, 238, 171, 0.8);
+  transition: 0.5s;
+}
+
+#D_contentOwner{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.D_contentTitle{
+  width: 10%;
+  margin: 20px;
+  flex-direction: column;
+}
+
+.review_content{
+  margin-left: 20px;
+  width: 55%;
+}
+
+.D_ownerPhoto{
+  margin: 5px 0 0 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  float:left;
+}
+
+.dName {
+  float: left;
+  margin: 10px 0 0 15px;
+}
+
+.dName b {
+  line-height: 40px;
+}
+
+h2 {
+  margin-left: 40px;
+}
+
